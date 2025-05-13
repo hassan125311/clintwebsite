@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interdependent Culture in Agriculture</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .hero-section {
+            background: url('https://agipk.com/wp-content/uploads/2016/07/shutterstock_148705532.jpg') no-repeat center center;
+            background-size: cover;
+            color: rgb(6, 0, 0);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        .navbar{
+  background-color: #255040;
+}
+
+
+        .navbar-nav .nav-item .nav-link {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000000;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+}
+#backToTop {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50px;
+        }
+
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">shuh</button>
+
+      <nav class="navbar navbar-expand-lg navbar-light  mb-4">
+        <img style="width: 130px;" src="gallery/NOMI.JPG.png" alt="">
+        <a class="navbar-brand text-light" href="#">AGRILIFE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="homr.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="services.html">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="q.no.5.html">feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="complaint and suggrestion.html">suggestion</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 style="color: rgb(21, 255, 0); font-weight: 700;" class="display-4">Interdependent Culture in Agriculture</h1>
+            <p class="lead"><b>Exploring how diverse agricultural practices work together for sustainable farming.</b></p>
+        </div>
+    </header>
+    <!-- Section 1 -->
+    <section style="background-color: rgb(127, 255, 155);" class="section mt-5">
+        <div class="container">
+            <h2 class="text-center">Understanding Interdependence</h2>
+            <p>This section discusses how different agricultural practices rely on each other to enhance productivity and sustainability.</p>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-3">Cultural Practices</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Traditional Methods</h3>
+                    <p>Details on traditional agricultural methods and their role in sustainability.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Modern Innovations</h3>
+                    <p>How modern techniques complement traditional practices for better outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="benefits">
+        <h2 class="text-center mb-3">Benefits of Interdependent Culture</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div style="border: 2px solid black;" class="card animate" id="benefit1">
+                    <img style="height: 300px;" src="https://static.wixstatic.com/media/34b4bc_0d106de9d65b4495a3dc3f126fac09dc.jpg/v1/fill/w_560,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/34b4bc_0d106de9d65b4495a3dc3f126fac09dc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Reduce Pollution</h5>
+                        <p class="card-text">A diverse ecosystem is more resilient to changes and disturbances.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div style="border: 2px solid black;" class="card animate" id="benefit2">
+                    <img style="height: 300px;" src="https://www.orfonline.org/public/uploads/posts/image/Climate-Finance-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Reduce Temprature</h5>
+                        <p class="card-text">Increased biodiversity helps in effective Reduce of Temprature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div style="border: 2px solid black;" class="card animate" id="benefit3">
+                    <img style="height: 300px;" src="https://media-cdn.tripadvisor.com/media/photo-s/18/01/ff/e5/fresh-air-a-new-perspectiveand.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Provide Fresh Air</h5>
+                        <p class="card-text">Diverse ecosystems contribute to Providing Fresh Airs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("backToTop");
+      
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+      
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+      
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
+      
+
+    <!-- Custom JS -->
+    <script>
+        // Fade-in effect
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            elements.forEach(element => observer.observe(element));
+        });
+    </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+    
+      navLinks.forEach(link => {
+        link.addEventListener('mouseover', function() {
+          this.style.color = '#0056b3';
+        });
+    
+        link.addEventListener('mouseout', function() {
+          this.style.color = '';
+        });
+      });
+    });
+    
+      </script>
+</body>
+</html>

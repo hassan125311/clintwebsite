@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increased Biodiversity</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .icon {
+            font-size: 2rem;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+        .icon:hover {
+            color: #0056b3;
+        }
+        .navbar{
+  background-color: #255040;
+}
+
+
+        .navbar-nav .nav-item .nav-link {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000000;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+}
+#backToTop {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50px;
+        }
+
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">shuh</button>
+
+    <nav class="navbar navbar-expand-lg navbar-light  mb-4">
+        <img style="width: 130px;" src="gallery/NOMI.JPG.png" alt="">
+        <a class="navbar-brand text-light" href="#">AGRILIFE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="homr.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="services.html">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="q.no.5.html">feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="complaint and suggrestion.html">suggestion</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <!-- Jumbotron -->
+    <div style="background-image: url(https://cdn.openart.ai/stable_diffusion/b31ed9c7d0393735268576e5a31389c0a3c9f482_2000x2000.webp);" class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 style="color: rgb(230, 230, 230); font-weight: 700;" class="display-4 ">Increased Biodiversity: A Vital Goal</h1>
+            <p style="color: rgb(6, 0, 0);" class="lead"><b>Explore the importance of biodiversity and how we can enhance it.</b></p>
+            <button class="btn btn-success btn-lg" id="learnMoreBtn">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="container" id="benefits">
+        <h2 class="text-center " style="font-weight: 2000;" >Benefits of Increased Biodiversity</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div style="border: 2px solid black;" class="card animate" id="benefit1">
+                    <img style="height: 300px;" src="https://sotp.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2011/04/800px-Forest_on_Barro_Colorado.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ecosystem Stability</h5>
+                        <p class="card-text">A diverse ecosystem is more resilient to changes and disturbances.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div style="border: 2px solid black;" class="card animate" id="benefit2">
+                    <img style="height: 300px;" src="https://3.bp.blogspot.com/-uy049ve938w/WvM3gMA2J3I/AAAAAAAASPc/mvbEW7ZLgyEwPolFszZO-guouweSPuilQCPcBGAYYCw/s1600/DSCN6872.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pollination</h5>
+                        <p class="card-text">Increased biodiversity helps in effective pollination of plants.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div style="border: 2px solid black;" class="card animate" id="benefit3">
+                    <img style="height: 300px;" src="https://static01.nyt.com/images/2021/06/10/us/10cli-biodiversity5/10cli-biodiversity5-mediumSquareAt3X.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Climate Regulation</h5>
+                        <p class="card-text">Diverse ecosystems contribute to regulating climate conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div style="background-image: url(https://cdn.britannica.com/89/94189-050-18038768/forest-floor-Redwood-National-Park-California.jpg);background-repeat: no-repeat;background-size: cover;" class="jumbotron jumbotron-fluid bg-light text-center" id="call-to-action">
+        <div class="container">
+            <h2 style="color: white;" class="display-4">Get Involved</h2>
+            <p style="color: white;" class="lead">Join us in promoting biodiversity. Every action counts!</p>
+            <a class="btn btn-success btn-lg" href="#" role="button">Learn How</a>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div style="border: 2px solid black;" class="card">
+                    <img style="height: 300px;" src="https://saladoh.wordpress.com/wp-content/uploads/2012/03/saas.png?w=584" class="card-img" alt="Biodiversity Image 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Forest Ecosystems</h5>
+                        <p class="card-text">Forests are home to more than half of the world's plant and animal species.</p>
+                        <i class="fas fa-tree icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="border: 2px solid black;" class="card">
+                    <img style="height: 300px;" src="https://ihe-delft-ihe-website-production.s3.eu-central-1.amazonaws.com/s3fs-public/2023-06/francesco-ungaro-XYMm4LRKZLE-unsplash.jpg" class="card-img" alt="Biodiversity Image 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coral Reefs</h5>
+                        <p class="card-text">Coral reefs support a vast array of marine life and are vital to ocean health.</p>
+                        <i style="font-size: 30px;color: #007bff;" class="fas fa-earth-oceania"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="border: 2px solid black;" class="card">
+                    <img style="height: 300px;" src="https://static.toiimg.com/photo/107084139.cms" class="card-img" alt="Biodiversity Image 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wetlands</h5>
+                        <p class="card-text">Wetlands act as natural water filters and provide crucial habitats for wildlife.</p>
+                        <i class="fas fa-water icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("backToTop");
+      
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+      
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+      
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
+      
+
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+    
+      navLinks.forEach(link => {
+        link.addEventListener('mouseover', function() {
+          this.style.color = '#0056b3';
+        });
+    
+        link.addEventListener('mouseout', function() {
+          this.style.color = '';
+        });
+      });
+    });
+    
+      </script>
+</body>
+</html>

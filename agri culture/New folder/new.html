@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navbar</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+.navbar{
+  background-color: #255040;
+}
+
+
+        .navbar-nav .nav-item .nav-link {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000000;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light  mb-4">
+    <img style="width: 130px;" src="gallery/NOMI.JPG.png" alt="">
+    <a class="navbar-brand text-light" href="#">AGRILIFE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="homr.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="aboutus.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="services.html">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="q.no.5.html">feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="complaint and suggrestion.html">suggestion</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('mouseover', function() {
+      this.style.color = '#0056b3';
+    });
+
+    link.addEventListener('mouseout', function() {
+      this.style.color = '';
+    });
+  });
+});
+
+  </script>
+</body>
+</html>
